@@ -1,4 +1,4 @@
-html,
+/* html,
 body,
 div,
 span,
@@ -128,4 +128,151 @@ table {
 input,
 select {
 	vertical-align: middle;
+}
+.box {
+	width: 200px;
+	height: 200px;
+	background-color: gray;
+	margin: 25px;
+	position: relative;
+	transition: background-color .2s ease-in;
+}
+.box:first-child {
+	animation-name: colorChange;
+	animation-duration: 5s;
+}
+.box:nth-child(2) {
+	animation-name: multiColorChange;
+	animation-duration: 10s;
+}
+/* .box:nth-child(3) {
+	position: relative;
+	animation-name: movement;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: ease;
+}
+.box:nth-child(3):hover {
+	animation-play-state: paused;
+} */
+/* body {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+i {
+	font-size: 4rem;
+}
+@keyframes colorChange {
+	from {
+		background-color: gray;
+	}
+	to {
+		background-color: transparent;
+	}
+}
+@keyframes multiColorChange {
+	from {
+		background-color: gray;
+	}
+	25% {
+		background-color: transparent;
+	}
+	25% {
+		background-color: tomato;
+	}
+	75% {
+		background-color: purple;
+	}
+	100% {
+		background-color: yellow;
+	}
+}
+@keyframes movement {
+	from {
+		background-color: teal;
+		left: 0;
+		top: 0;
+	}
+	100% {
+		left: 200px;
+		top: 200px;
+	}
+}
+
+@keyframes loading {
+	from {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+img {
+	width: 200 px;
+	animation-name: loading;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.box:hover {
+	background-color: rgb(199, 199, 199);
+	cursor: pointer;
+}
+input:focus {
+	width: 50vw;
+}
+input {
+	width: 200px;
+	transition: all .5s ease-in;
+} */
+/* nav a {
+	position: relative;
+	font-size: 5rem;
+	text-decoration: none;
+}
+nav a::after {
+	content: '';
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 0;
+	width: 0%;
+	height: 2px;
+	background-color: red;
+	transition: all .3s ease-in;
+}
+nav a:hover::after {
+	width: 100%;
+} */
+/* nav a {
+	position: relative;
+	font-size: 2rem;
+}
+span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 10px;
+	width: 100%;
+	background-color: red;
+	z-index: -1;
+} */
+body {
+	margin: 0;
+	height: 100vh;
+	background-color: cadetblue;
+}
+.box {
+	width: 50%;
+	height: 50%;
+	background-color: gray;
+}
+.boxbox {
+	width: 50%;
+	height: 50%;
+	background-color: white;
 }
